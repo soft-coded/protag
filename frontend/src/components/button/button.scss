@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+.arrow-btn {
+  background: none;
+  border: 2px solid $white;
+  width: 5vw;
+  height: 5vw;
+  color: $white;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  &:active {
+    color: $black;
+    background-color: $white;
+  }
+  @media (hover: hover) {
+    &:hover {
+      color: $black;
+      background-color: $white;
+    }
+  }
+  @media (max-width: $mobile-width-1) {
+    width: 15vw;
+    height: 15vw;
+  }
+  svg {
+    font-size: 2.2vw;
+    @media (max-width: $mobile-width-1) {
+      font-size: 8vw;
+    }
+  }
+}

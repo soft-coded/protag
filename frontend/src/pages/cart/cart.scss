@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+.cart-screen {
+  margin: 15vh 0 10vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .grand-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      font-weight: 400;
+      font-size: 1.3vw;
+      @media (max-width: $mobile-width-1) {
+        font-size: 6vw;
+      }
+    }
+    h2 {
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+  }
+  .checkout-btn {
+    margin-top: 3vh;
+    align-self: flex-end;
+    transition: all 0.3s ease-out;
+    background-color: $white;
+    color: $black;
+    font-size: 1.1vw;
+    font-weight: 700;
+    padding: 2.3vh 1.7vw;
+    &:hover {
+      box-shadow: $drop-shadow;
+    }
+    @media (max-width: $mobile-width-1) {
+      font-size: 4vw;
+      padding: 2vh 4vw;
+      align-self: center;
+    }
+  }
+  .no-items {
+    text-align: center;
+  }
+}

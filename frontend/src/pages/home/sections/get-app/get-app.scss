@@ -1,0 +1,79 @@
+@import "../../../../variables.scss";
+.get-app {
+  margin: 20vh 0;
+  .wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @media (max-width: $mobile-width-1) {
+      flex-direction: column;
+    }
+  }
+  .phone-img {
+    height: 85vh;
+    overflow: hidden;
+    @media (max-width: $mobile-width-1) {
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      object-position: top;
+      object-fit: unset;
+      width: 30vw;
+      height: 250vh;
+      @media (max-width: $mobile-width-1) {
+        width: 100vw;
+      }
+    }
+  }
+  ul {
+    margin-left: 10vw;
+    list-style-type: circle;
+    font-weight: 600;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @media (max-width: $mobile-width-1) {
+      margin: 3vh 0 0;
+      font-size: 5vw;
+      list-style-position: inside;
+      gap: 2vh;
+    }
+  }
+  .app-play {
+    margin: 10vh 0;
+    h4 {
+      font-size: 2vw;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-align: center;
+      @media (max-width: $mobile-width-1) {
+        font-size: 9vw;
+      }
+    }
+    .stores {
+      margin-top: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    img {
+      width: 20vw;
+      cursor: pointer;
+      &:active {
+        filter: invert(100%);
+      }
+      @media (hover: hover) {
+        &:hover {
+          filter: invert(100%);
+        }
+      }
+      @media (max-width: $mobile-width-1) {
+        width: 40vw;
+      }
+    }
+  }
+}

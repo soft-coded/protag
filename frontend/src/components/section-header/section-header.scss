@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+.section-header {
+  margin: 3vh 0;
+  h1 {
+    font-size: 3vw;
+    font-weight: 600;
+    @media (max-width: $mobile-width-1) {
+      font-size: 10vw;
+    }
+  }
+}

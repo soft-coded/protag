@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+.footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3vh 0;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: $mobile-width-1) {
+      gap: 3vh;
+    }
+  }
+  h4 {
+    margin-bottom: 2vh;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 4vh;
+  }
+}

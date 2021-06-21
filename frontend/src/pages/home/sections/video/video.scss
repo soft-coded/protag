@@ -1,0 +1,47 @@
+@import "../../../../variables.scss";
+.video-section {
+  margin: 0 0 5vh;
+  @media (max-width: $mobile-width-1) {
+    margin: 0;
+  }
+}
+.video-img {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  img {
+    width: 100%;
+    height: 60vh;
+    @media (max-width: $mobile-width-1) {
+      width: 100vw;
+      height: 30vh;
+    }
+  }
+  .play-video-btn {
+    transition: all 0.3s ease-out;
+    position: absolute;
+    top: 50%;
+    left: 5vw;
+    transform: translateY(-50%);
+    background-color: $white;
+    border: none;
+    color: $black;
+    font-family: inherit;
+    font-size: 1.1vw;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 1.4vh 1.4vw;
+    &:active {
+      box-shadow: $drop-shadow;
+    }
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: $drop-shadow;
+      }
+    }
+    @media (max-width: $mobile-width-1) {
+      font-size: 4vw;
+      padding: 2vh 3vw;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "./variables.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  background-color: $black;
+  color: $white;
+}
+img,
+svg {
+  vertical-align: middle;
+  object-fit: cover;
+  object-position: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+.inner {
+  max-width: 1200px;
+  padding: 0 5vw;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+.page-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.4s ease-out;
+}
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.4s ease-out;
+}

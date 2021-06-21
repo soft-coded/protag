@@ -1,0 +1,128 @@
+@import "../../variables.scss";
+.sign-up-section {
+  height: 100vh;
+  @media (max-width: $mobile-width-1) {
+    height: unset;
+    min-height: 100vh;
+    margin: 10vh 0;
+  }
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper {
+    display: flex;
+    gap: 3vw;
+    @media (max-width: $mobile-width-1) {
+      flex-direction: column;
+    }
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding-right: 2.9vw;
+    border-right: 2px solid $white;
+    @media (max-width: $mobile-width-1) {
+      border: none;
+      border-bottom: 2px solid $white;
+      padding: 0 0 3vh;
+    }
+    h1 {
+      font-size: 3vw;
+      @media (max-width: $mobile-width-1) {
+        font-size: 10vw;
+      }
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
+      @media (max-width: $mobile-width-1) {
+        flex-direction: row;
+        gap: 3vw;
+      }
+      button {
+        font-size: 1.2vw;
+        font-weight: 600;
+        padding: 2vh 2vw;
+        @media (max-width: $mobile-width-1) {
+          font-size: 3vw;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 6vh 3vw;
+    background-color: $white;
+    color: $black;
+    .form-group {
+      display: flex;
+      gap: 2vw;
+      .form-control {
+        position: relative;
+        width: 100%;
+      }
+      label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1vw;
+        font-weight: 600;
+        font-size: 1.25vw;
+        color: $black + bd;
+        pointer-events: none;
+        @media (max-width: $mobile-width-1) {
+          font-size: 3.5vw;
+          left: 2vw;
+        }
+      }
+    }
+    input {
+      background: $grey;
+      border: none;
+      height: 7vh;
+      width: 100%;
+      font-size: 1.6vw;
+      padding: 0 1vw;
+      @media (max-width: $mobile-width-1) {
+        font-size: 4.5vw;
+        padding: 0 2vw;
+      }
+    }
+    button {
+      background: $black;
+      color: $white;
+      padding: 2vh 2vw;
+      align-self: stretch;
+      font-size: 1.5vw;
+      font-weight: 600;
+      margin-top: 2vh;
+      transition: all 0.3s ease-out;
+      &:hover {
+        box-shadow: $drop-shadow;
+      }
+      &:disabled {
+        opacity: 0.6;
+        pointer-events: none;
+      }
+      @media (max-width: $mobile-width-1) {
+        font-size: 3vw;
+      }
+    }
+    p {
+      font-size: 1.3vw;
+      a {
+        color: blue;
+      }
+      @media (max-width: $mobile-width-1) {
+        font-size: 3vw;
+      }
+    }
+  }
+}
