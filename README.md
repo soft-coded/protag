@@ -12,6 +12,8 @@ A react based mockup of the modern e-commerce websites that use way too many ani
   * ExpressJS
   * MySQL database
  
+I have kept the backend incredibly simple because frankly I was getting kind of bored with this project and wanted to work on something else. But that does not mean I cannot make complex backends.
+ 
  ## Preview
  Preview is available [here on netlify.](https://screactecom.netlify.app/) This website is preview of just the frontend and is not connected to the backend.
  
