@@ -23,7 +23,7 @@ export default function LogIn() {
       })
         .then(res => res.json())
         .then(data => {
-          setUser({ username: data.username });
+          setUser({ username: data.username, token: data.token });
           setIsAuthed(true);
           history.push("/");
         })

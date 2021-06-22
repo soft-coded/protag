@@ -141,7 +141,7 @@ export default function SignUp() {
       .then(res => res.json())
       .then(data => {
         setIsAuthed(true);
-        setUser({ username: data.username });
+        setUser({ username: data.username, token: data.token });
       })
       .catch(err => alert(err));
     e.preventDefault();
